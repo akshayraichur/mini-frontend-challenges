@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #f1f2f6;
+  --seconndary-color: #aeb8fe;
+  --text-color: #758bfd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.container,
+footer {
+  text-align: center;
+  margin: 2rem;
+}
+
+input {
+  width: 100%;
+  height: 2.2rem;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--seconndary-color);
+  border-radius: 5px;
+  padding: 0.2rem;
+  margin: 1rem 0;
+}
+
+.chips-container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 15px;
+  column-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.chip-container {
+  border-radius: 15px;
+  background-color: var(--seconndary-color);
+  color: black;
+  display: flex;
+  padding: 0.2rem 1rem;
+  width: fit-content;
+  column-gap: 15px;
+}
+
+.close-btn {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--seconndary-color);
+  text-decoration: underline;
+}
+
+a:checked {
+  color: var(--text-color);
+}
